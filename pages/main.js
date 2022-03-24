@@ -7,7 +7,7 @@ export default function main () {
   return (
     <div className="container">
       <NavBar></NavBar>
-      <span className="text-green-500">Hi, my name is Jesse Huang</span>
+      <span>Hi, my name is Jesse Huang</span>
       <style jsx global>{`
         body {
           background-color: #121212;
