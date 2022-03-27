@@ -15,13 +15,6 @@ export default function Home() {
     <div className="bg-background">
       <NavBar></NavBar>
       <span className="text-lg text-secondary">Hi, my name is Jesse Huang</span>
-      {/* <style jsx global>{`
-        body {
-          background-color: #121212;
-          color: ${tailwindColors.primary};
-        }
-      `}
-      </style> */}
     </div>
   )
 }
