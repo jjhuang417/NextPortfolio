@@ -9,19 +9,19 @@ import NavBar from '../components/NavBar.jsx';
 import Tailwind from '../tailwind.config.js';
 
 export default function Home() {
-  const tailwindColors = Tailwind.theme.colors
+  const tailwindColors = Tailwind.theme.colors;
 
   return (
-    <div className="container">
+    <div className="bg-background">
       <NavBar></NavBar>
-      <span className="text-9xl">Hi, my name is Jesse Huang</span>
-      <style jsx global>{`
+      <span className="text-lg text-secondary">Hi, my name is Jesse Huang</span>
+      {/* <style jsx global>{`
         body {
           background-color: #121212;
           color: ${tailwindColors.primary};
         }
       `}
-      </style>
+      </style> */}
     </div>
   )
 }
