@@ -43,7 +43,7 @@ export default function NavBar() {
       <div className="flex flex-row w-80 justify-evenly" name="OtherPageWrapper">
         <div className={navTextStyle}>About</div>
         <div className={navTextStyle}>Project</div>
-        <button className={resumeButton}>Resume</button>
+        <a rel="noopener noreferrer" target="_blank" href="https://emerald-roxane-78.tiiny.site/" className={resumeButton}>Resume</a>
       </div>
     </div>
   );
