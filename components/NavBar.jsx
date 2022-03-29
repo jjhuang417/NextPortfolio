@@ -6,9 +6,6 @@ import Image from 'next/image';
 import Tailwind from '../tailwind.config.js';
 
 export default function NavBar() {
-  // Tailwind custom
-  const tailwindColors = Tailwind.theme.colors;
-
   // Styling
   const navWrappingStyle = `
     flex
