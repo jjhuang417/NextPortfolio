@@ -1,8 +1,8 @@
-// Library import
+// Library imports
 import React from 'react';
 import Image from 'next/image';
 
-// Style import
+// Style imports
 import Tailwind from '../tailwind.config.js';
 
 export default function NavBar() {
