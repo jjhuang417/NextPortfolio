@@ -13,8 +13,7 @@ export default function NavBar() {
     border-primary
     justify-between
     w-screen
-    h-12
-    sm:h-16
+    md:h-16
     items-center
     bg-background
   `;
@@ -34,7 +33,7 @@ export default function NavBar() {
     rounded-lg
     p-2
   `;
-
+ 
   return (
     <div className={navWrappingStyle} name="NavBarWrapper">
       <div className="flex flex-row">

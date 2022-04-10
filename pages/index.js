@@ -15,6 +15,7 @@ export default function Home() {
     <div className="bg-background">
       <NavBar></NavBar>
       <span className="text-lg text-secondary">Hi, my name is Jesse Huang</span>
+      <div className="bg-background"></div>
     </div>
   )
 }
