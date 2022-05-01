@@ -8,6 +8,7 @@ module.exports = {
       'primary': '#BB86FC',
       'variant': '#3700B3',
       'secondary': '#03DAC6',
+      'ternary': '#F1DEFF',
       'background': '#121212',
     },
     extend: {},
