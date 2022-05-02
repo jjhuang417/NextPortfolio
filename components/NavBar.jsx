@@ -33,7 +33,7 @@ export default function NavBar() {
     rounded-lg
     p-2
   `;
- 
+
   return (
     <div className={navWrappingStyle} name="NavBarWrapper">
       <div className="flex flex-row">
@@ -48,8 +48,8 @@ export default function NavBar() {
         <div
           className="flex flex-row w-80 justify-evenly"
           name="OtherPageWrapper">
-          <div className={navTextStyle}>About</div>
-          <div className={navTextStyle}>Project</div>
+          <a className={navTextStyle}>About</a>
+          <a className={navTextStyle}>Project</a>
           <a rel="noopener noreferrer" target="_blank" href="https://pdfhost.io/v/9qXAcJLma_Jesse_Huang_Software_Engineer_Resume" className={resumeButton}>Resume</a>
         </div>
       </div>
