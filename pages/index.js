@@ -41,7 +41,7 @@ export default function Home() {
   `;
 
   const paragraphStyling = `
-    text-ternary
+    text-ternary/[.6]
     text-l
     md:text-xl
     my-3
