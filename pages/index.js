@@ -11,6 +11,19 @@ import Tailwind from "../tailwind.config.js";
 export default function Home() {
   const tailwindColors = Tailwind.theme.colors;
 
+  const outerDiv = `
+    flex
+    flex-row
+    justify-center
+    mt-8
+  `;
+
+  const innerDiv= `
+    flex
+    flex-col
+    justify-center
+  `;
+
   const hiMy = `
     text-secondary
     text-xl
@@ -41,7 +54,7 @@ export default function Home() {
   `;
 
   const paragraphStyling = `
-    text-ternary/[.6]
+    text-ternary/[.7]
     text-l
     md:text-xl
     my-3
@@ -53,20 +66,26 @@ export default function Home() {
   return (
     <div className="bg-background">
       <NavBar></NavBar>
-      <main className="flex flex-row justify-center mt-8">
-        <section className="flex flex-col justify-center">
+      <main className={outerDiv}>
+        <div className={innerDiv}>
           <span className={hiMy}>Hi, my name is</span>
           <span className={nameStyling}>Jesse Huang.</span>
           <span className={interestStyle}>
             I love building things with code.
           </span>
-          <span className={paragraphStyling}>
+          <p className={paragraphStyling}>
             I am a fullstack software engineer and I specialize in web
             development. I have built a wide range of web apps from games to
-            credit tracker.
-          </span>
-        </section>
+            utility apps.
+          </p>
+        </div>
       </main>
+      {/* This is where the next section with pics will be */}
+      <section className={outerDiv}>
+        <div className={innerDiv}>
+
+        </div>
+      </section>
     </div>
   );
 }
