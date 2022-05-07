@@ -24,7 +24,7 @@ export default function Home() {
     justify-center
   `;
 
-  const hiMy = `
+  const introText = `
     text-secondary
     text-xl
     md:text-4xl
@@ -63,27 +63,34 @@ export default function Home() {
     md:mx-40
   `;
 
+  const sectionOuterDiv = `
+    flex
+    flex-row
+    mt-8
+    ml-28
+  `;
+
   return (
     <div className="bg-background">
       <NavBar></NavBar>
       <main className={outerDiv}>
         <div className={innerDiv}>
-          <span className={hiMy}>Hi, my name is</span>
+          <span className={introText}>Hi, my name is</span>
           <span className={nameStyling}>Jesse Huang.</span>
           <span className={interestStyle}>
-            I love building things with code.
+            I love building cool things with technology.
           </span>
           <p className={paragraphStyling}>
             I am a fullstack software engineer and I specialize in web
             development. I have built a wide range of web apps from games to
             utility apps.
           </p>
+          <p></p>
         </div>
       </main>
-      {/* This is where the next section with pics will be */}
-      <section className={outerDiv}>
+      <section className={sectionOuterDiv}>
         <div className={innerDiv}>
-
+          <span className='text-primary '>This here is the next section</span>
         </div>
       </section>
     </div>
