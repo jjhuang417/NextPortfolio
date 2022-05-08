@@ -21,12 +21,12 @@ export default function NavBar() {
   const navTextStyle = `
     text-lg
     sm:text-xl
-    text-primary
+    text-secondary
     p-2
   `;
 
   const resumeButton = `
-    text-secondary
+    text-primary
     text-lg
     sm:text-xl
     border
