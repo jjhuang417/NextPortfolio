@@ -4,13 +4,12 @@ import React from "react";
 
 // Component Import
 import NavBar from "../components/NavBar.jsx";
-import Intro from "../components/Intro.jsx"
+import Intro from "../components/Intro.jsx";
 
 // Style import
 import Tailwind from "../tailwind.config.js";
 
 export default function Home() {
-
   const sectionOuterDiv = `
     flex
     flex-row
@@ -21,28 +20,22 @@ export default function Home() {
   `;
 
   const sectionHeader = `
-    text-4xl
-    md:text-6xl
+    text-secondary
+    text-2xl
+    md:text-4xl
   `;
 
   return (
     <div className="bg-background">
       <NavBar />
       <Intro />
-      <div className="mt-72">
-        <span className="text-primary"> Hello</span>
+      <div className={sectionOuterDiv}>
+        <span
+          className={sectionHeader}
+        >
+          I. <span className="text-ternary">About Me</span>
+        </span>
       </div>
     </div>
   );
 }
-
-{/* <section className={sectionOuterDiv}>
-        <div className={innerDiv}>
-          <span className={sectionHeader}>
-            <span className="text-secondary">
-              I. <span className="text-ternary">About Me</span>
-            </span>
-          </span>
-          <p className={paragraphStyling}>Hello</p>
-        </div>
-      </section> */}

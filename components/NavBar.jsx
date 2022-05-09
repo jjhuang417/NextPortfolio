@@ -1,9 +1,9 @@
 // Library imports
-import React from 'react';
-import Image from 'next/image';
+import React from "react";
+import Image from "next/image";
 
 // Style imports
-import Tailwind from '../tailwind.config.js';
+import Tailwind from "../tailwind.config.js";
 
 export default function NavBar() {
   // Styling
@@ -21,8 +21,9 @@ export default function NavBar() {
   const navTextStyle = `
     text-lg
     sm:text-xl
-    text-secondary
+    text-ternary
     p-2
+    cursor-pointer
   `;
 
   const resumeButton = `
@@ -38,6 +39,7 @@ export default function NavBar() {
     <div className={navWrappingStyle} name="NavBarWrapper">
       <div className="flex flex-row">
         <Image
+          className="cursor-pointer"
           alt="Logo"
           src="/JH.png"
           width={60}
@@ -47,10 +49,22 @@ export default function NavBar() {
       <div className="flex flex-row justify-end">
         <div
           className="flex flex-row w-80 justify-evenly"
-          name="OtherPageWrapper">
-          <a className={navTextStyle}>About</a>
-          <a className={navTextStyle}>Project</a>
-          <a rel="noopener noreferrer" target="_blank" href="https://pdfhost.io/v/9qXAcJLma_Jesse_Huang_Software_Engineer_Resume" className={resumeButton}>Resume</a>
+          name="OtherPageWrapper"
+        >
+          <a className={navTextStyle}>
+            <span className="text-secondary">I. </span>About
+          </a>
+          <a className={navTextStyle}>
+            <span className="text-secondary">II. </span>Project
+          </a>
+          <a
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://pdfhost.io/v/9qXAcJLma_Jesse_Huang_Software_Engineer_Resume"
+            className={resumeButton}
+          >
+            Resume
+          </a>
         </div>
       </div>
     </div>

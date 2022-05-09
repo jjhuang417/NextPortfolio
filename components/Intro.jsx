@@ -60,7 +60,7 @@ export default function Intro() {
         <span className={introText}>Hi, my name is</span>
         <span className={nameStyling}>Jesse Huang.</span>
         <span className={interestStyle}>
-          I am passionate about building cool things.
+          I love bringing ideas to life.
         </span>
         <p className={paragraphStyling}>
           I am a fullstack software engineer and I specialize in web
