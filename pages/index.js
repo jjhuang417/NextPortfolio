@@ -5,6 +5,7 @@ import React from "react";
 // Component Import
 import NavBar from "../components/NavBar.jsx";
 import Intro from "../components/Intro.jsx";
+import AboutMe from "../components/AboutMe.jsx"
 
 // Style import
 import Tailwind from "../tailwind.config.js";
@@ -29,13 +30,7 @@ export default function Home() {
     <div className="bg-background">
       <NavBar />
       <Intro />
-      <div className={sectionOuterDiv}>
-        <span
-          className={sectionHeader}
-        >
-          I. <span className="text-ternary">About Me</span>
-        </span>
-      </div>
+      <AboutMe />
     </div>
   );
 }
