@@ -10,14 +10,6 @@ import Intro from "../components/Intro.jsx"
 import Tailwind from "../tailwind.config.js";
 
 export default function Home() {
-  const tailwindColors = Tailwind.theme.colors;
-
-  const outerDiv = `
-    flex
-    flex-row
-    justify-center
-    mt-24
-  `;
 
   const sectionOuterDiv = `
     flex
@@ -36,10 +28,10 @@ export default function Home() {
   return (
     <div className="bg-background">
       <NavBar />
-      <main className={outerDiv}>
-        <Intro />
-        
-      </main>
+      <Intro />
+      <div className="mt-72">
+        <span className="text-primary"> Hello</span>
+      </div>
     </div>
   );
 }

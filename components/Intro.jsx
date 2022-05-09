@@ -2,6 +2,13 @@
 import React from "react";
 
 export default function Intro() {
+  const outerDiv = `
+  flex
+  flex-row
+  justify-center
+  mt-24
+  `;
+
   const innerDiv = `
     flex
     flex-col
@@ -48,16 +55,19 @@ export default function Intro() {
   `;
 
   return (
-    <div className={innerDiv}>
-      <span className={introText}>Hi, my name is</span>
-      <span className={nameStyling}>Jesse Huang.</span>
-      <span className={interestStyle}>
-        I am passionate about building cool things.
-      </span>
-      <p className={paragraphStyling}>
-        I am a fullstack software engineer and I specialize in web development.
-        I have built a wide range of web apps from games to finance apps.
-      </p>
-    </div>
+    <main className={outerDiv}>
+      <div className={innerDiv}>
+        <span className={introText}>Hi, my name is</span>
+        <span className={nameStyling}>Jesse Huang.</span>
+        <span className={interestStyle}>
+          I am passionate about building cool things.
+        </span>
+        <p className={paragraphStyling}>
+          I am a fullstack software engineer and I specialize in web
+          development. I have built a wide range of web apps from games to
+          finance apps.
+        </p>
+      </div>
+    </main>
   );
 }
