@@ -5,7 +5,7 @@ import React from "react";
 // Component Import
 import NavBar from "../components/NavBar.jsx";
 import Intro from "../components/Intro.jsx";
-import AboutMe from "../components/AboutMe.jsx"
+import AboutMe from "../components/AboutMe.jsx";
 
 // Style import
 import Tailwind from "../tailwind.config.js";
